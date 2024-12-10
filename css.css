@@ -1,0 +1,241 @@
+/* Body Styles */
+body {
+    background: radial-gradient(circle, rgba(206,210,232,1) 60%, rgba(120,193,213,1) 95%);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6; /* Improved line height for readability */
+}
+
+/* Heading Styles */
+h1 {
+    font-size: 2rem; /* Responsive size */
+    color: #012a23; /* Adjusted color */
+    font-family: "Abel", sans-serif;
+    text-align: center;
+    margin: 60px 0; /* Reduced margin for better spacing */
+    text-decoration: underline;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: black;
+    text-align: center;
+    margin: 20px 0; /* Consistent margins */
+    font-style: normal;
+}
+
+h3 {
+    text-align: center; /* Center the text */
+    margin: 40px 0; /* Increase margin for better spacing */
+    font-size: 3rem; /* Maintain size or adjust for visual balance */
+    color: #1e1a1a; /* Keep your color */
+    font-family: "Titillium Web", sans-serif; /* Maintain font */
+    background-color: rgba(255, 255, 255, 0.8); /* Light background for contrast */
+    padding: 10px 20px; /* Add padding for a more spacious feel */
+    border-radius: 10px; /* Rounded corners for a softer look */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Slight text shadow for emphasis */
+}
+
+h4 {
+    font-size: 1.5rem; /* Adjusted size */
+    color: #252323;
+    margin: 15px 0; /* Consistent margin */
+    text-align: center;
+}
+
+p {
+    font-size: 1.5rem; /* Slightly larger than normal for readability */
+    color: #000000; /* Dark color for contrast */
+    text-align: center; /* Centered paragraph */
+    margin: 40px 0; /* Space above and below the paragraph */
+    line-height: 1.5; /* Increased line height for readability */
+    max-width: 600px; /* Limit width for better line length */
+    margin-left: auto; /* Centering */
+    margin-right: auto; /* Centering */
+}
+
+/* Logo and Links */
+header {
+    display: flex;
+    justify-content: space-between;
+    background-image: url('leafs.png'); /* Replace with your image path */
+    background-size: cover;
+}
+
+/* Look at adding a media query to change the menu on mobile */
+.logo-container {
+    position: relative; 
+    z-index: 1000;
+}
+
+.logo {
+    width: 150px; /* Adjusted size */
+    height: 100px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.links {
+    margin-right: 30px;
+    margin-bottom: 30px;
+    font-size: 1rem; /* Responsive font size */
+    display: flex; /* Enable flexbox for layout */
+    justify-content: flex-end; /* Align items to the right */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.links a {
+    text-decoration: none;
+    background-color: #d0dede;
+    color: black; /* Text color */
+    transition: color 0.3s, transform 0.1s; /* Smooth transitions */
+    border: 2px solid #000;
+    border-radius: 50px;
+    padding: 25px;
+    margin: 5px; /* Add margin between buttons */
+}
+
+.links a:hover,
+.links a:focus {
+    color: #0056b3; /* Darker blue on hover */
+    outline: 2px solid #0434b8; /* Visible focus style */
+    background-color: #ffffff;
+    transform: translateX(15px); /* Corrected hover effect */
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 600px) {
+    .links {
+        flex-direction: column; /* Stack links vertically */
+        align-items: center; /* Center align the links */
+        margin-right: 0; /* Reset margin-right for mobile */
+    }
+
+    .links a {
+        padding: 25px 20px; /* Adjust padding for mobile */
+        font-size: 0.9rem; /* Slightly smaller font size */
+        width: 90%; /* Make buttons wider for touch targets */
+        margin: 5px 0; /* Space between buttons */
+    }
+
+    h1, h2, h3, h4 {
+        font-size: 1.5rem; /* Reduce font sizes on small screens */
+    }
+
+    .container {
+        padding: 15px; /* Less padding on small screens */
+    }
+}
+
+/* Container Styles */
+.container {
+    max-width: 1000px;
+    margin: 100px auto; /* Centers the container */
+    padding: 30px; /* Adjusted padding */
+    background-color: #ffffff; /* White background for contrast */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Deeper shadow */
+}
+
+/* Grid for Projects */
+.projects-and-skills {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Space between projects */
+}
+
+/* Project Card Styles */
+.project {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+    background-color: #fafafa; /* Slightly off-white */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s; /* Smooth scale on hover */
+}
+
+.project:hover {
+    transform: scale(1.02); /* Slight scale effect on hover */
+}
+
+.project h4 {
+    margin: 0 0 10px;
+    color: #333;
+}
+
+.desc p {
+    margin: 0; /* Remove default margin */
+    color: #666; /* Slightly lighter text for description */
+    font-size: 30px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+    .container {
+        padding: 15px; /* Less padding on small screens */
+    }
+}
+
+/* Image Styles */
+img {
+    display: block; /* Allows margin auto to work */
+    margin: 40px auto; /* Centers the image horizontally */
+    width: 70%; /* Set the width to 70% of the container (responsive) */
+    max-width: 400px; /* Limit the maximum width to 400px */
+    height: auto; /* Automatically adjust height based on aspect ratio */
+    border-radius: 10px; /* Slightly rounded corners */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+img:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+
+img:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+
+img:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Background Section Styles */
+.background-section {
+    position: relative; /* Establish a positioning context */
+    text-align: center; /* Center align text */
+    padding-bottom: 200px;
+}
+
+.ocean {
+    background-color: rgba(255, 255, 255, 0.5); /* Fixed rgba value */
+}
+
+.background-img {
+    position: absolute; /* Position the image absolutely */
+    top: 5%; /* Adjust the vertical position */
+    left: 50%; /* Center it horizontally */
+    width: 100%; /* Make it full width */
+    height: auto; /* Maintain aspect ratio */
+    transform: translate(-50%, -50%); /* Corrected transform */
+    z-index: -1; /* Send it to the back */
+}
+
+/* Contact Section Styles */
+.contact-section {
+    text-align: center;
+    padding: 10px;
+    background-image: url('portfolioocean.jpg'); /* Replace with your image path */
+    background-size: cover; /* Cover the entire section */
+    background-position: center; /* Center the image */
+    color: white; /* Change text color for contrast */
+    padding: 40px; /* Add padding for better spacing */
+}
+
+footer {
+    font-weight: bold;
+}
