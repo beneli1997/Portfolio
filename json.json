@@ -1,16 +1,19 @@
 {
     "projects": [
       {
-        "title": "Project One",
-        "description": "Description."
+        "title": "Email Client",
+        "description": "Group project. This is a simple email app made with React. It lets you view, read, and organize your emails. You can mark emails as read or unread, sort messages, and send new emails. The app is fast, easy to use, and shows how I can build interactive apps with React.",
+        "image": "emailclientscreenshot.png"
       },
       {
-        "title": "Project Two",
-        "description": "Description."
+        "title": "Project Management App",
+        "description": "This is a project management app created using Object-Oriented Programming (OOP) in PHP. It allows users to manage projects, tasks, and teams efficiently. Users can create, update, and track projects, assign tasks to team members, set deadlines, and monitor progress. The app is built with OOP principles to ensure a clean, maintainable code structure, making it easy to scale and update. It demonstrates my ability to use PHP for back-end development with an emphasis on clean design and functionality.",
+        "image": "projectmanager.png"
       },
       {
-        "title": "Project Three",
-        "description": "Description."
+        "title": "My First Portfolio",
+        "description": "Finally, as you can see, this is my first personal portfolio website built with HTML, CSS, and JavaScript. It features a clean and responsive design using Tailwind CSS and custom styles. The website showcases my skills, projects, and experience, with a dynamic touch powered by JavaScript. I also use a JSON file to manage and display project data, demonstrating my ability to work with data structures in web development. This project highlights my understanding of front-end technologies and my ability to create an engaging, interactive online presence.",
+        "image": "portfolioscreenshot.png"
       }
     ]
   }

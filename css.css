@@ -169,7 +169,7 @@ header {
 .desc p {
     margin: 0; /* Remove default margin */
     color: #666; /* Slightly lighter text for description */
-    font-size: 30px;
+    font-size: 14px;
 }
 
 /* Responsive Adjustments */
@@ -204,6 +204,20 @@ img:hover {
     transform: scale(1.05); /* Slightly enlarge on hover */
 }
 
+/* Normal image style */
+.project .img {
+    cursor: pointer;  /* Change cursor to pointer to show it's clickable */
+    transition: transform 0.3s ease, width 0.3s ease; /* Smooth transition for expanding */
+  }
+  
+  /* Expanded state */
+  .project .img.expanded {
+    transform: scale(1.9);  /* Enlarge the image by 2x */
+    z-index: 100;         /* Ensure it stays on top */
+    position: relative;   /* Keep it within normal flow but on top */
+    max-width: 100%;      /* Make sure the width doesn't go out of bounds */
+  }
+  
 /* Background Section Styles */
 .background-section {
     position: relative; /* Establish a positioning context */

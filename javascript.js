@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 projectCard.innerHTML = `
                     <h4>${project.title}</h4>
+                    <img src="${project.image}" alt="Email" class="img expandable-image">
                     <div class="content">
                         <div class="desc">
                             <p>${project.description}</p>
@@ -19,6 +20,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 projectsContainer.appendChild(projectCard);
             });
+
+            const images = document.querySelectorAll(".expandable-image");
+            images.forEach(image => {
+                image.addEventListener("click", function () {
+                    this.classList.toggle("expanded");
+                });
+            });
         })
         .catch(error => console.error('Error fetching the projects:', error));
+
+     
+
 });
